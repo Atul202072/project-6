@@ -2,14 +2,12 @@
 #include <iostream>
 using namespace std;
 void swapPointer(int* a, int* b)
-{
-    int temp=*a;
+{   int temp=*a;
     *a=*b;
     *b=temp;
 }
  int main()
- {
-    int a,b;
+ {  int a,b;
     cout<<"Enter the value of a: ";
     cin>>a;
     cout<<"Enter the value of b: ";
