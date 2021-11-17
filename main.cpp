@@ -1,23 +1,21 @@
-//call by refrence method
+//call by value method
 #include <iostream>
 using namespace std;
-void swapPointer(int* a, int* b)
+
+    void swap(int a, int b)
 {
-    int temp=*a;
-    *a=*b;
-    *b=temp;
+    int temp = a;        
+    a = b;               
+    b = temp;  
 }
- int main()
- {
-    int a,b;
-    cout<<"Enter the value of a: ";
-    cin>>a;
-    cout<<"Enter the value of b: ";
-    cin>>b;
-    cout<<"Before swapping: "<<endl;
-    cout<<"The value of a is: "<<a<<endl<<"The value of b is: "<<b<<endl;
-    swapPointer(&a,&b);
-    cout<<"After swapping: "<<endl;
-    cout<<"The value of a is: "<<a<<endl<<"The value of b is: "<<b<<endl;
+    int main()
+{
+    int c,d;
+    cout<<"Enter the value of c: ";
+    cin>>c;
+    cout<<"Enter the value of d: ";
+    cin>>d;
+    swap(c, d); 
+    cout<<"The value of c is: "<<c<<" ,and;"<<endl<<"the value of d is: "<<d<<endl; 
     return 0;
- }
+}
